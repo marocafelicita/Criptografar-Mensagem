@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Criptografando</title>
+  </head>
+  <body>
+
+<!-- --------------------------------------------------- Main -------------------------------------------  -->
+<div class="main">
+  <h1>Criptografando</h1>
+      <form>
+          <label for="mensagem">Insira a mensagem aqui:</label>
+              <textarea id="mensagem"></textarea>
+
+          <select name="codigo" id="codigo">
+              <option disabled selected>Código</option>
+              <option value="base64">Base 64</option>
+              <option value="cesar">Cifra de Cesar</option>
+          </select>
+
+          <fieldset class="keyDiv">
+              <label for="chave">Incrementar 1 à 25</label>
+              <input type="number" id="chave" value="1" max="26" />
+          </fieldset>
+
+          <fieldset class="codeRadio">
+            <div class="divR">
+                <input type="radio" name="code" class="radio" id="code" />
+                <label for="codificar">Codificar</label>
+            </div>
+            <div class="divR">
+                <input type="radio" name="code" class="radio" id="decode" />
+                <label for="decodificar">Decodificar</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label for="resultado">Resultado:</label>
+                <textarea name="resultado" id="resultado" readonly></textarea>
+          </fieldset>
+
+            <button id="btnResult">
+                <p>Codificar/Decodificar</p>
+            </button>
+      </form>
+</div>
+
+<!------------------------------------------------------------------------------------------>
+
+
+<!------------------------------------------------------ Rodapé ----------------------------------------->
+<footer>
+
+</footer>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
